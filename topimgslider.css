@@ -1,0 +1,95 @@
+.topimgslider{
+    width:100%;
+
+    position: relative;
+    height: 500px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 20px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    overflow: hidden;
+}
+.slide{
+    /* background-size: contain; */
+    position: absolute;
+    border: 2px solid #4545455a;
+    /* border-radius: 10px; */
+    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 10px;
+    width: 40%;
+    height: 90%;
+}
+.fa-chevron-left{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: #bdbdbd;
+    font-size: 30px;
+    align-items: center;
+    padding:9px 12px;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-radius: 50%;
+ 
+    cursor: pointer;
+}
+.fa-chevron-right{
+    border: none;
+    border-radius: 50%;
+    right: 2%;
+    cursor: pointer;
+    padding: 9px 12px;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbdbd;
+}
+@media screen and (max-width: 580px) {
+    .slide{
+        height: 85%;
+        width: 48%;
+    }
+    .topimgslider{
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .fa-chevron-left{
+        font-size: 25px;
+        padding: 9px 12px;
+        left: 9%;
+
+    }
+    .fa-chevron-right{
+        font-size: 25px;
+        padding: 9px 12px;
+    }
+}
+
+
+/* css for the question select */
+
+.question{
+    margin: 30px 0;
+    width: 100%;
+    
+    padding: 10px;
+    height: 50px;
+}
+.question select{
+    width: 100%;
+    outline: none;
+    height: 100%;
+}
+/* .answer{
+    width: 100%;
+} */

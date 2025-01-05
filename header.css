@@ -1,0 +1,147 @@
+header{
+    padding: 5px 13px;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* margin-bottom: 20px; */
+    z-index: 25;
+    width: 100%;
+    display: flex;
+    background-color:#222831 ;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+    justify-content: space-between;
+}
+
+header img{
+    /* color: #00ADB5; */
+    width: 130px;
+
+    user-select: none;
+    /* font-size: 28px; */
+    opacity: 0.9;
+    cursor: pointer;
+    
+}
+header img:hover{
+    opacity: 1;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li a{
+    margin-left: 25px;
+    text-decoration: none;
+    margin-right: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 18px;
+    color: #3e3e3e;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+header ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    background-color: #00adb5;
+    bottom: -20%;
+    left: 0;
+    border-radius: 4px;
+    border: none;
+    /* display: none; */
+    transition: all 0.3s ease;
+}
+header ul li a:hover::before{
+    /* padding: 2px; */
+    height: 3.5px;
+    /* display: block; */
+    width: 100%;
+}
+header ul li a:hover{
+    transform: scale(1.2);
+    color: #fff;
+    
+}
+.info{
+    display: flex;
+    align-items: center;    
+}
+.info button{
+    padding: 10px;
+    background-color: #00ADB5;
+    border: none;
+    border-radius: 20px;
+    margin-right: 8px;
+    color: #eeeeee;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+.info button:active{
+    color: #00ADB5;
+    background-color: #eeeeee;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    /* border: 1px solid gray; */
+}
+#login{
+    margin-left: 15px;
+}
+@media screen and (max-width: 680px) {
+    header img{
+        width: 100px;
+    }
+    header ul{
+        display: none;
+    }
+   
+    header ul li a {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    header {
+        padding: 10px 12px;
+    }
+}
+
+ @media screen and (max-width: 400px) { 
+ 
+    /* header img {
+        width: 15%;
+    } */
+    header button{
+        margin-right: 5px;
+    } 
+    header{
+        padding: 10px 10px;
+    }
+}
+.topht{
+
+    position: relative;
+    margin: 0 10px 0 20px;
+}
+.topheart{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.topht::before{
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 15px;
+    height: 15px;
+    background-color: #393939;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
