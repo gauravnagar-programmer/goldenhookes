@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    #logoimg{
+        width: 150px;
+        position: absolute;
+        top: 15%;
+        cursor: pointer;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .container{
+        margin: 150px auto;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        padding: 20px 15px;
+    }
+    .container h2{
+        font-size: 30px;
+    }
+    .container form{
+        margin-top: 10px;
+    }
+    .container input{
+        width: 100%;
+        margin: 15px 0;
+        border-radius: 8px;
+        border: 1.5px solid rgba(0, 0, 0, 0.525);
+        /* background-color: gray; */
+        font-size: 17px;
+        outline: none;
+        height: 45px;
+        padding: 10px;
+
+
+    }
+    .logbox{
+        width: 100%;
+        display: flex;
+        /* border: 1px solid black; */
+        align-items: center;
+        /* padding: 10px; */
+    }
+    .container button{
+        width: 30%; 
+        margin: 0 25px 10px 0;
+        height: 35px;
+        cursor: pointer;
+        color: white;
+        background-color: #272727;
+        border: none;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        border-radius:3px;
+        font-size: 17px;
+
+    }
+    .logbox p{
+        font-size: 13px;
+    }
+    @media screen and (max-width:650px){
+        #logoimg{
+            width: 100px;
+        }
+        .container h2{
+            font-size: 20px;
+        }
+        .container{
+            width: 50%;
+            margin: 100px auto;
+        }
+        .container input{
+            font-size: 15px;
+            margin: 10px 0;
+            border: 1px solid rgb(0, 0, 0,0.526);
+            height: 35px;
+        }
+        .logbox button{
+            font-size: 13px;
+            height: 30px;
+        }
+        .logbox p{
+            font-size: 11px;
+        }
+    }
+    @media screen and (max-width:400px){
+        #logoimg{
+            width: 80px;
+        }
+        .container h2{
+            font-size: 15px;
+        }
+        .container{
+            width: 60%;
+        }
+        .container input{
+            font-size: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.526);
+            height: 30px;
+        }
+        .logbox button{
+            font-size: 11px;
+            height: 25px;
+        }
+     
+        .logbox p{
+            font-size: 9px;
+        }
+    }
+</style>
+</head>
+<body>
+    <a href="main.html"><img id="logoimg" src="logoimage/logo_gh-removebg-preview.png" alt=""></a>
+    <div class="container">
+        <h2 style="color: #00adb5;">Login or Sign-up</h2>
+        <form action="">
+
+            <input type="email" placeholder="Enter Email">
+            <input type="password" placeholder="Enter Password">
+            <div class="logbox">
+                <button>Login</button>
+                <p>Don't have an account <a href="">Sign-up</a></p>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>

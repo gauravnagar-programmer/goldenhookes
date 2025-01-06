@@ -2,7 +2,7 @@ let slides=document.querySelectorAll('.slide');
 let count=0;
 
 slides.forEach((slide,index) => {
-    slide.style.left=`${index*55}%`
+    slide.style.left=`${index*50}%`
 });
 
 const slidetopimg=()=>{
